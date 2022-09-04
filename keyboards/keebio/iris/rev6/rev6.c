@@ -75,9 +75,9 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         }
     } else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_ALT,KC_MS_WH_UP);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_LALT,KC_MS_WH_DOWN);
         }
     }
     return false;
